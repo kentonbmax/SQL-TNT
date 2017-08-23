@@ -1,4 +1,6 @@
 # SQL-TNT
+
+![explosion-147909_960_720](https://user-images.githubusercontent.com/15804484/29634837-235c2878-8819-11e7-8304-166f4c27d7fd.png)
 SQL + Typescript Node Templatee(TNT)
 SQL ORM using Sequelize.
 
@@ -16,7 +18,7 @@ SQL ORM using Sequelize.
 1. npm run watch
 1. run the VSC debugger or `npm start`
 
-##Optional
+## Optional
 1. Launch SSMS
 1. Enter in localhost,1401
 1. Select sql login and use the credentials in the dockerfile.
