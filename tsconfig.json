@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "alwaysStrict": true
+    },
+    "include": [
+        "*.ts",
+        "server/*.ts",
+        "server/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "public.app",
+        "app"
+    ]
+}

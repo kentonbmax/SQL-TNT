@@ -1,0 +1,17 @@
+From microsoft/mssql-server-linux
+
+# set environment variables
+ENV SA_PASSWORD=Your!Strong@Pass
+ 
+ENV ACCEPT_EULA=Y
+
+# Create local sql directory
+COPY docker/createdb.sql createdb.sql
+COPY docker/setup.sh setup.sh
+COPY docker/entry.sh entry.sh
+RUN chmod +x ./setup.sh
+CMD /bin/bash ./entry.sh 
+
+
+
+
