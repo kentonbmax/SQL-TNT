@@ -14,8 +14,8 @@ SQL ORM using Sequelize.
 1. run `docker run -d -p 1401:1433 sqltnt`
 
 ## Running the Code
-1. npm install
-1. npm run watch
+1. `npm install`
+1. `npm run watch`
 1. run the VSC debugger or `npm start`
 
 ## Optional
