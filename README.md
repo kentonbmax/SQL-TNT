@@ -1,6 +1,7 @@
-# SQL-TNT
+# SQL-TNT 
+## SQL + Typescript + Node + Template = an explosion of creativity.
 
-![explosion-147909_960_720](https://user-images.githubusercontent.com/15804484/29634837-235c2878-8819-11e7-8304-166f4c27d7fd.png)
+![explosion-147909_960_720](https://user-images.githubusercontent.com/15804484/29634837-235c2878-8819-11e7-8304-166f4c27d7fd.png =760x520)
 SQL + Typescript Node Templatee(TNT)
 SQL ORM using Sequelize.
 
