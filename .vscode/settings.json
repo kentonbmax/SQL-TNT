@@ -8,5 +8,6 @@
          "**/.DS_Store": true,
          "**/*.js.map": {"when": "$(basename)"},
          "**/*.js": {"when": "$(basename).ts"}
-     }
+     },
+     "files.eol": "\n"
 }
