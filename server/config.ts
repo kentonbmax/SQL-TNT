@@ -27,6 +27,6 @@ module.exports = {
     server: server.length === 2? server[0] : server,
     database: process.env.SQL_DATABASE,
     user: process.env.SQL_USER,
-    sqlPass: process.env.PWD
+    sqlPass: process.env.SQL_PASSWORD
 }
 

@@ -6,8 +6,8 @@
     "configurations": [{
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceRoot}\\index.js",
+            "name": "SQL TNT",
+            "program": "${workspaceRoot}//index.js",
             "cwd": "${workspaceRoot}",
             "outFiles": [],
             "sourceMaps": true
