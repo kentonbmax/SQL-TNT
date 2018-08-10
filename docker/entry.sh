@@ -1,1 +1,1 @@
-sleep(20) ; ./setup.sh & /opt/mssql/bin/sqlservr
+./setup.sh & /opt/mssql/bin/sqlservr
