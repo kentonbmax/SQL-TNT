@@ -11,8 +11,8 @@
 > Note - this template uses .env to simulate environment variables at runtime. 
 > Warning - You should update the docker file with a strong password for sa. 
 > Warning - .sh files must be in unix format. Set your eol setting in vsc to `/n` or check docker logs is tnt db not created. 
-1. run `docker build -t sqltnt .`
-1. run `docker run -d -p 1401:1433 sqltnt`
+1. run `npm run docker:build`
+1. run `docker run -d -p 1433:1433 sqltnt`
 
 ## Running the Code
 1. Run DOCKER image as container from above.
