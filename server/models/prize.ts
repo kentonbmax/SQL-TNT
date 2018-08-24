@@ -1,4 +1,4 @@
-import * as Sequelize from 'sequelize'
+import * as Sequelize from 'Sequelize'
 import connection from '../dbConnection'
 let sequelize:Sequelize.Sequelize = connection
 
@@ -18,20 +18,20 @@ export class Prize implements IPrize {
 }
 
 export default sequelize.define<Prize, IPrize>('prize', {
-	id: {
+	Id: {
 		type: sequelize.Sequelize.BIGINT,
 		allowNull: false,
 		primaryKey: true
     },
-    nitroId: {
+    NitroId: {
         type: sequelize.Sequelize.BIGINT,
 		allowNull: false
 	},
-	type: {
+	Type: {
 		type: sequelize.Sequelize.STRING,
 		allowNull: false
 	},
-	reward: {
+	Reward: {
 		type: sequelize.Sequelize.INTEGER,
 		allowNull: true
 	}

@@ -16,16 +16,16 @@ export class Nitro implements INitro {
 }
 
 export default sequelize.define<Nitro, INitro>('nitro', {
-	id: {
+	Id: {
 		type: sequelize.Sequelize.BIGINT,
 		allowNull: false,
 		primaryKey: true
 	},
-	name: {
+	Name: {
 		type: sequelize.Sequelize.STRING,
 		allowNull: false
 	},
-	level: {
+	Level: {
 		type: sequelize.Sequelize.INTEGER,
 		allowNull: true
 	}

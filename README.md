@@ -15,13 +15,14 @@
 1. run `docker run -d -p 1401:1433 sqltnt`
 
 ## Running the Code
+1. Run DOCKER image as container from above.
 1. `npm install`
 1. `npm run watch`
 1. run the VSC debugger or `npm start`
 
 ## Optional
-1. Launch SSMS
-1. Enter in localhost,1401
+1. Launch SSMS, or RazorSQL
+1. Enter in localhost,1433
 1. Select sql login and use the credentials in the dockerfile.
 
 

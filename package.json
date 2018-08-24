@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "watch": "tsc -w",
-    "build": "tsc"
+    "build": "tsc",
+    "docker:build": "docker build -t sqltnt ."
   },
   "repository": {
     "type": "git",
@@ -27,14 +28,14 @@
   },
   "homepage": "https://github.com/kentonbmax/SQL-TNT#readme",
   "devDependencies": {
-    "@types/node": "^7.0.13",
-    "@types/sequelize": "^4.0.51",
+    "@types/node": "^10.9.1",
+    "@types/sequelize": "^4.27.25",
     "dotenv": "^4.0.0",
-    "typescript": "^2.4.2"
+    "typescript": "^2.8.4"
   },
   "dependencies": {
     "express": "^4.15.3",
-    "sequelize": "^4.22.6",
-    "tedious": "^2.0.0"
+    "sequelize": "^4.38.0",
+    "tedious": "^2.6.4"
   }
 }

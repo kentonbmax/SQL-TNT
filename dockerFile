@@ -1,4 +1,4 @@
-From microsoft/mssql-server-linux:2017-GA
+From microsoft/mssql-server-linux:2017-CU9
 
 # set environment variables
 ENV SA_PASSWORD=Your!Strong@Pass

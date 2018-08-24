@@ -1,5 +1,5 @@
-let server: string = ''
-let port: number = process.env.SQL_PORT? process.env.SQL_PORT : 1433
+let server: any
+let port: any = process.env.SQL_PORT? process.env.SQL_PORT : 1433
 
 try { 
   let str = process.env.SQL_SERVER 
