@@ -1,5 +1,5 @@
 # SQL-TNT 
-## SQL + Typescript + Node + Template = an explosion of creativity.
+## Template(SQL + Typescript + Node) = an explosion of creativity.
 > MSSQL is not just for compiled code!
 
 <image src="https://user-images.githubusercontent.com/15804484/29634837-235c2878-8819-11e7-8304-166f4c27d7fd.png" height="760" width="520">
