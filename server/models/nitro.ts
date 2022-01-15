@@ -1,32 +1,22 @@
-import * as Sequelize from 'sequelize'
+import { Sequelize, DataTypes, Model} from 'sequelize'
 import connection from '../dbConnection'
-let sequelize:Sequelize.Sequelize = connection
+let sequelize:Sequelize = connection
 
-export interface INitro {
-	Id: number,
-	Name: string,
-	Level: number
-}
+export class Nitro extends Model{}
 
-export class Nitro implements INitro {
-	constructor(public Id: number,
-		public Name: string,
-		public Level: number) {
-	}
-}
 
-export default sequelize.define<Nitro, INitro>('nitro', {
+export default sequelize.define<Nitro>('nitro', {
 	Id: {
-		type: sequelize.Sequelize.BIGINT,
+		type: DataTypes.BIGINT,
 		allowNull: false,
 		primaryKey: true
 	},
 	Name: {
-		type: sequelize.Sequelize.STRING,
+		type: DataTypes.STRING,
 		allowNull: false
 	},
 	Level: {
-		type: sequelize.Sequelize.INTEGER,
+		type: DataTypes.INTEGER,
 		allowNull: true
 	}
 	}, {
