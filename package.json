@@ -8,7 +8,8 @@
     "start": "node index.js",
     "watch": "tsc -w",
     "build": "tsc",
-    "docker:build": "docker build -t sqltnt ."
+    "docker:build": "docker build -t sqltnt .",
+    "docker:sql": "docker run -d -p 1433:1433 sqltnt -- ./entry.sh"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,6 @@
   "dependencies": {
     "express": "^4.15.3",
     "sequelize": "^6.13.0",
-    "tedious": "^2.6.4"
+    "tedious": "^14.0.0"
   }
 }

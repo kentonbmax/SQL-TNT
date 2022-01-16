@@ -1,10 +1,14 @@
 import dbConnection from '../dbConnection'
+import { QueryTypes } from 'sequelize'
+import { Prize } from '../models/prize'
 
 // stored proc is faster!
-export async function getPrizeTypebyName(name:string): Promise<string> {
-   return dbConnection.query('lookupPrizeTypeByName :name', 
+export async function getPrizeTypebyName(name:string): Promise<Prize[]> {
+    let result: Prize[] = await dbConnection.query('lookupPrizeTypeByName :name', 
     {replacements: {name: name},
-    type: dbConnection.QueryTypes.SELECT})
+    type: QueryTypes.SELECT})
+
+    return result;
 }
 
 export async function getPrizeTypeByNameRawQuery(name:string) {

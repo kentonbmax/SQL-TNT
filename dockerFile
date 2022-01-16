@@ -1,7 +1,7 @@
-From microsoft/mssql-server-linux:2017-CU9
+FROM mcr.microsoft.com/mssql/server:2019-latest
 
 # set environment variables
-ENV SA_PASSWORD=Your!Strong@Pass
+ENV SA_PASSWORD=Your!StrongPass
  
 ENV ACCEPT_EULA=Y
 
@@ -9,7 +9,7 @@ ENV ACCEPT_EULA=Y
 COPY docker/createdb.sql createdb.sql
 COPY docker/setup.sh setup.sh
 COPY docker/entry.sh entry.sh
-RUN chmod +x ./setup.sh
+#RUN chmod +x ./entry.sh
 CMD /bin/bash ./entry.sh 
 
 

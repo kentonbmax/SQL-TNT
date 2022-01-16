@@ -1,38 +1,26 @@
-import * as Sequelize from 'Sequelize'
+import { Sequelize, DataTypes, Model} from 'sequelize'
 import connection from '../dbConnection'
-let sequelize:Sequelize.Sequelize = connection
+let sequelize:Sequelize = connection
 
-export interface IPrize {
-    Id: number,
-    NitroId: number,
-	Type: string,
-	Reward: number
-}
 
-export class Prize implements IPrize {
-    constructor(public Id: number,
-        public NitroId: number,
-		public Type: string,
-		public Reward: number) {
-	}
-}
+export class Prize extends Model {}
 
-export default sequelize.define<Prize, IPrize>('prize', {
+export default sequelize.define<Prize>('prize', {
 	Id: {
-		type: sequelize.Sequelize.BIGINT,
+		type: DataTypes.BIGINT,
 		allowNull: false,
 		primaryKey: true
     },
     NitroId: {
-        type: sequelize.Sequelize.BIGINT,
+        type: DataTypes.BIGINT,
 		allowNull: false
 	},
 	Type: {
-		type: sequelize.Sequelize.STRING,
+		type: DataTypes.STRING,
 		allowNull: false
 	},
 	Reward: {
-		type: sequelize.Sequelize.INTEGER,
+		type: DataTypes.INTEGER,
 		allowNull: true
 	}
 	}, {

@@ -15,6 +15,7 @@ try {
 
 module.exports = {
   connection : {
+      "encrypt": process.env.SQL_ENCRYPT,
       "dialect": "mssql",
       "host": server.length === 2? server[0] : server,
       "port": port,
