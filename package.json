@@ -35,7 +35,7 @@
     "typescript": "^2.8.4"
   },
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.18.2",
     "sequelize": "^6.13.0",
     "tedious": "^14.0.0"
   }
